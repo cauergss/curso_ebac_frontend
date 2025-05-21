@@ -4,24 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicío</title>
+    <title>Exercicío_HTML_JS</title>
+    <link rel="stylesheet" href="./main.css" />
 </head>
 
 <body>
-    <h1>Formulário de cadastro</h1>
-    <form>
-        <label for="Nome">Nome</label>
-        <input id="Nome" type="text" />
-        <br />
-        <label for="email">Email</label>
-        <input id="email" type="email" />
-        <br />
-        <label for="senha">Senha</label>
-        <input id="senha" type="password" />
-        <br />
-        <button type="submit">Cadastrar</button>
-    </form>
-
+    <div class="container">
+        <h1>EBAC VERIFICATOR</h1>
+        <form id="form-verificador">
+            <input type="number" id="numA" required placeholder="numero A" />
+            <input type="number" id="numB" required placeholder="numero B">
+            <p class="error-msg"></p>
+            <button id="btn-sub" type="submit">Verificar</button>
+        </form>
+        <p class="success-msg"></p>
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
