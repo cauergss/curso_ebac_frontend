@@ -2,61 +2,158 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body {}
+body {
+    background-color: #E9E9E9;
+}
 
 .container {
-    margin: 80px auto;
-    max-width: 640px;
-    width: 100%;
-}
-
-form {
-    margin-top: 40px;
-}
-
-input, 
-textarea, 
-button {
-    display: block;
-    padding: 8px;
-    margin-bottom: 8px;
-    resize: none;
-}
-
-button {
-    background-color: #2ecc71;
+    width: 671px;
+    height: 665.63px;
+    background-color: #FFFFFF;
     border: none;
-    color: #fff;
+    border-radius: 15.34px;
+    margin: 0px auto;
+    margin-top: 109px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292E32;
+    width: 671px;
+    height: 105.83px;
+    border-radius: 15.34px 15.34px 0 0;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form input {
+    width: 365.02px;
+    height: 85.12px;
+    border-radius: 15.34px;
+    text-align: center;
+    padding: 36px;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.container form button {
+    width: 159.51px;
+    height: 85.12px;
+    border-radius: 15.34px;
+    border: none;
+    background-color: #4383D0;
+    margin-left: 36px;
+    margin-top: 50px;
+    color: white;
+    font-size: 25px;
+}
+
+.container form button:hover {
     cursor: pointer;
+    background-color: #0074FF;
 }
 
-button:hover {
-    background-color: #27ae60;
+#listThings {
+    font-weight: normal;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 25px;
 }
 
-.success-msg {
-    background-color: #27ae60;
-    padding: 16px;
+ul {
+    max-height: 360px;
+    overflow-y: auto;
+    list-style: none;
+}
+
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+        position: relative; /* cria o contexto para o filho absoluto */
+
+}
+
+ul li h4 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    margin-left: 10px;
+    margin-top: 25px;
+    font-weight: normal;
+    font-size: 19px;
+    overflow-wrap: break-word;
+}
+
+ul li .square,
+ul li .deleteButton {
+    flex-shrink: 0;
+    width: 40px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+ul li .square {
+    border: 0.77px solid;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+ul li .deleteButton {
+    background-color: #D04343;
     color: white;
-    display: none;
+    margin-left: 20px;
 }
 
-
-.error-msg {
-    padding: 18px;
-    background-color: red;
-    color: white;
-    margin-bottom: 8px;
-    font-size: 12px;
-    display: none;
-    width: 185px;
+ul li .deleteButton:hover {
+    background-color: #FF0000;
 }
 
-input.error {
-    color: red;
-    border-color: red;
-    outline-color: red;
+.verified {
+    position: absolute;
+    top: 25px;
+    left: 20px; 
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+}
+
+.verified img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul li.feito h4 {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+ul li.feito .square {
+    background-color: #7BD77B;
+    border: none;
 }
