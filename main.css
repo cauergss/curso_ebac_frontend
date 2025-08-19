@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#backGround {
+    width: 100vw;
+    height: 100vh;
+}
+
+#infoBox {
+    position: absolute;
+    top: 7rem;
+    left: 1.31rem;
+    width: 21rem;
+    height: 36.75rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.container #mainText {
+    color: #4B4B4B;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.68344rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: #009DFF;
+}
+
+.container #secondaryText {
+    width: 20.1875rem;
+    height: 1.6875rem;
+    color: #848484;
+    margin-left: 0.37rem;
+    top: 0.75rem;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.teste {
+    font-weight: 40rem !important;
+}
+
+.col {
+    padding: 0 !important;
+}
+
+form {
+    margin-left: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+    color: none;
+}
+
+.entrada {
+    position: relative;
+    width: 19.125rem;
+}
+
+.entrada i {
+    position: absolute;
+    top: 50%;
+    left: 0.41rem;
+    color: #686868;
+    pointer-events: none;
+}
+
+.entrada input {
+    width: 100%;
+    padding-left: 2.4rem;
+    height: 2.37575rem;
+    border-radius: 0.27288rem;
+    border: 0.728px solid #C0C0C0;
+    color: #686868;
+    font-size: 1.06913rem;
+    font-weight: 500;
+}
+
+.entrada .inputSquare {
+    position: absolute;
+    top: 1.5rem;
+    position: absolute;
+    width: 2.31638rem;
+    height: 2.37575rem;
+    border-radius: 0.27288rem;
+    border: 0.582px solid #D8D8D8;
+    background: #F0F0F0;
+}
+
+#label-termos {
+    color: #595959;
+    font-size: 1.05rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.termos {
+    margin-top: 1rem;
+}
+
+#send-button {
+    margin-top: 1rem;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    flex-shrink: 0;
+    color: #848484;
+    font-size: 0.8125rem;
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    line-height: normal;
+    bottom: 2rem;
+}

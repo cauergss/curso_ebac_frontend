@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oie</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/transformations.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <img id="backGround" src="./assets/tropical-beach-3840x2160-14811 2.png" alt="">
+        <div id="infoBox">
+            <p id="mainText">
+                Você está <span class="highlight">pronto(a)</span><br>
+                para vivenciar a <br> viagem dos <span class="highlight">seus</span><br> sonhos?
+            </p>
+            <p id="secondaryText">
+                Preencha seus dados corretamente e receba ofertas únicas e incríveis para sua próxima aventura!
+            </p>
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="entrada">
+                            <div class="inputSquare"></div>
+                            <label class="form-label" for="name"><i class='bx bx-user bx-sm'></i></label>
+                            <input required type="text" id="name" placeholder="Seu nome completo....">
+                        </div>
+                        <div class="entrada">
+                            <div class="inputSquare"></div>
+                            <label class="form-label" for="email"><i class='bx bx-mail-open bx-sm'></i></label>
+                            <input required type="email" id="email" placeholder="Seu email....">
+                        </div>
+                        <div class="entrada">
+                            <div class="inputSquare"></div>
+                            <label class="form-label" for="phone"><i class='bx bx-phone bx-sm'></i></label>
+                            <input required type="tel" id="phone" placeholder="Seu telefone....">
+                        </div>
+                        <div class="termos">
+                            <input required class="form-check-input" type="checkbox" id="aceito-termos">
+                            <label id="label-termos" class="form-check-label" for="aceito-termos">Li e concordo com os
+                                termos do site</label>
+                        </div>
+                        <button id="send-button" class="btn btn-primary btn-lg" type="submit">Iniciar meu sonho</button>
+                    </form>
+                </div>
+            </div>
+            <footer>© 2025 Viagem dos Sonhos. Todos os direitos<br> reservados.</footer>
+        </div>
+    </div>
+</body>
+
+</html>
