@@ -4,137 +4,451 @@
     box-sizing: border-box;
 }
 
-.container {
-    position: relative;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-#backGround {
-    width: 100vw;
+body {
+    background-image: url('./assets/tropical-beach-3840x2160-14811 1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
-}
-
-#infoBox {
-    position: absolute;
-    top: 7rem;
-    left: 1.31rem;
-    width: 21rem;
-    height: 36.75rem;
-    border-radius: 1rem;
-    background-color: white;
-}
-
-.container #mainText {
-    color: #4B4B4B;
-    margin-top: 1.5rem;
-    text-align: center;
-    font-size: 1.68344rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-bottom: 0;
-}
-
-.highlight {
-    color: #009DFF;
-}
-
-.container #secondaryText {
-    width: 20.1875rem;
-    height: 1.6875rem;
-    color: #848484;
-    margin-left: 0.37rem;
-    top: 0.75rem;
-    text-align: center;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 0;
-}
-
-.teste {
-    font-weight: 40rem !important;
-}
-
-.col {
-    padding: 0 !important;
-}
-
-form {
-    margin-left: 0.75rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100vw;
     margin: 0;
+    padding: 0;
+    overflow: hidden; /* Para evitar barras de rolagem */
 }
 
-input:focus {
-    outline: none;
-    color: none;
+@media screen and (max-width: 640px) {
+
+    .container {
+        position: relative;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #backGround {
+        width: 23.4375rem;
+        height: 50.75rem;
+    }
+
+    #infoBox {
+        position: absolute;
+        top: 7rem;
+        left: 1.31rem;
+        width: 21rem;
+        height: 36.75rem;
+        border-radius: 1rem;
+        background-color: white;
+    }
+
+    .container #mainText {
+        color: #4B4B4B;
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: 1.68344rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 0;
+    }
+
+    .highlight {
+        color: #009DFF;
+    }
+
+    .container #secondaryText {
+        width: 20.1875rem;
+        height: 1.6875rem;
+        color: #848484;
+        margin-left: 0.37rem;
+        top: 0.75rem;
+        text-align: center;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 0;
+    }
+
+    .teste {
+        font-weight: 40rem !important;
+    }
+
+    .col {
+        padding: 0 !important;
+    }
+
+    form {
+        margin-left: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    input:focus {
+        outline: none;
+        color: none;
+    }
+
+    .entrada {
+        position: relative;
+        width: 19.125rem;
+    }
+
+    .entrada i {
+        position: absolute;
+        top: 50%;
+        left: 0.41rem;
+        color: #686868;
+        pointer-events: none;
+    }
+
+    .entrada input {
+        width: 100%;
+        padding-left: 2.4rem;
+        height: 2.37575rem;
+        border-radius: 0.27288rem;
+        border: 0.728px solid #C0C0C0;
+        color: #686868;
+        font-size: 1.06913rem;
+        font-weight: 500;
+    }
+
+    .entrada .inputSquare {
+        position: absolute;
+        top: 1.5rem;
+        position: absolute;
+        width: 2.31638rem;
+        height: 2.37575rem;
+        border-radius: 0.27288rem;
+        border: 0.582px solid #D8D8D8;
+        background: #F0F0F0;
+    }
+
+    #label-termos {
+        color: #595959;
+        font-size: 1.05rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .termos {
+        margin-top: 1rem;
+    }
+
+    #send-button {
+        margin-top: 1rem;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        flex-shrink: 0;
+        color: #848484;
+        font-size: 0.8125rem;
+        font-style: normal;
+        text-align: center;
+        font-weight: 500;
+        line-height: normal;
+        bottom: 2rem;
+    }
+
 }
 
-.entrada {
-    position: relative;
-    width: 19.125rem;
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+    .container {
+        position: relative;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #backGround {
+        width: 52.125rem;
+        height: 74.625rem;
+        opacity: 90%;
+    }
+
+    #infoBox {
+        position: absolute;
+        top: 13rem;
+        left: 3.5rem;
+        width: 45.125rem;
+        height: 47.875rem;
+        border-radius: 1rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container #mainText {
+        position: relative;
+        text-align: center;
+        color: #4B4B4B;
+        font-size: 2.6875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 34.4375rem;
+        height: 9rem;
+        padding-top: 2.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .container #secondaryText {
+        width: 33.125rem;
+        height: 2.3125rem;
+        color: #848484;
+        text-align: center;
+        font-size: 1.07225rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 2rem;
+    }
+
+    input:focus {
+        outline: none;
+        color: none;
+    }
+
+    .entrada {
+        position: relative;
+        width: 29.125rem;
+    }
+
+    .entrada i {
+        position: absolute;
+        top: 2.1rem;
+        left: 0.49rem;
+        color: #686868;
+        pointer-events: none;
+    }
+
+    .entrada input {
+        width: 100%;
+        padding-left: 3.6rem;
+        height: 3.77575rem;
+        border-radius: 0.27288rem;
+        border: 0.728px solid #C0C0C0;
+        color: #686868;
+        font-size: 1.06913rem;
+        font-weight: 500;
+    }
+
+    .entrada .inputSquare {
+        position: absolute;
+        top: 1.5rem;
+        position: absolute;
+        width: 3.626rem;
+        height: 3.71894rem;
+        border-radius: 0.27288rem;
+        border: 0.582px solid #D8D8D8;
+        background: #F0F0F0;
+    }
+
+    .form-check-input {
+        border-color: #4B4B4B !important;
+    }
+
+    #aceito-termos {
+        transform: scale(1.3);
+        margin-right: 0.5rem;
+        margin-top: 0.35rem;
+        top: 0.2rem;
+    }
+
+    #label-termos {
+        color: #595959;
+        font-size: 1.28869rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .termos {
+        margin-top: 1rem;
+    }
+
+    #send-button {
+        margin-top: 1rem;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        flex-shrink: 0;
+        color: #848484;
+        font-size: 1.21769rem;
+        font-style: normal;
+        text-align: center;
+        font-weight: 500;
+        line-height: normal;
+        bottom: 2rem;
+    }
+
+    i.bx {
+        font-size: 2.5rem !important;
+    }
+
+    #send-button {
+        margin-top: 2rem;
+        transform: scale(1.3) !important;
+    }
+
 }
 
-.entrada i {
-    position: absolute;
-    top: 50%;
-    left: 0.41rem;
-    color: #686868;
-    pointer-events: none;
-}
+@media screen and (min-width: 1024px) {
 
-.entrada input {
-    width: 100%;
-    padding-left: 2.4rem;
-    height: 2.37575rem;
-    border-radius: 0.27288rem;
-    border: 0.728px solid #C0C0C0;
-    color: #686868;
-    font-size: 1.06913rem;
-    font-weight: 500;
-}
+    html,
+    body {
+        overflow-x: hidden;
+    }
 
-.entrada .inputSquare {
-    position: absolute;
-    top: 1.5rem;
-    position: absolute;
-    width: 2.31638rem;
-    height: 2.37575rem;
-    border-radius: 0.27288rem;
-    border: 0.582px solid #D8D8D8;
-    background: #F0F0F0;
-}
+    .container {
+        position: relative;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 
-#label-termos {
-    color: #595959;
-    font-size: 1.05rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
+    #backGround {
+        width: 100dvw;
+        height: 100dvh;
+        object-fit: cover;
+    }
 
-.termos {
-    margin-top: 1rem;
-}
+    #infoBox {
+        position: absolute;
+        top: 5rem;
+        left: 31.44rem;
+        width: 45.125rem;
+        height: 47.875rem;
+        border-radius: 1rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
 
-#send-button {
-    margin-top: 1rem;
-}
+    .container #mainText {
+        position: relative;
+        text-align: center;
+        color: #4B4B4B;
+        font-size: 2.6875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 34.4375rem;
+        height: 9rem;
+        padding-top: 2.25rem;
+        margin-bottom: 2rem;
+    }
 
-footer {
-    position: absolute;
-    width: 100%;
-    flex-shrink: 0;
-    color: #848484;
-    font-size: 0.8125rem;
-    font-style: normal;
-    text-align: center;
-    font-weight: 500;
-    line-height: normal;
-    bottom: 2rem;
+    .container #secondaryText {
+        width: 33.375rem;
+        height: 2.375rem;
+        color: #848484;
+        text-align: center;
+        font-size: 1.07225rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-top: 2rem;
+    }
+
+    input:focus {
+        outline: none;
+        color: none;
+    }
+
+    .entrada {
+        position: relative;
+        width: 29.125rem;
+    }
+
+    .entrada i {
+        position: absolute;
+        top: 2.1rem;
+        left: 0.49rem;
+        color: #686868;
+        pointer-events: none;
+    }
+
+    .entrada input {
+        width: 100%;
+        padding-left: 3.9rem;
+        height: 3.77575rem;
+        border-radius: 0.27288rem;
+        border: 0.728px solid #C0C0C0;
+        color: #686868;
+        font-size: 1.06913rem;
+        font-weight: 500;
+    }
+
+    .entrada .inputSquare {
+        position: absolute;
+        top: 1.5rem;
+        position: absolute;
+        width: 3.626rem;
+        height: 3.71894rem;
+        border-radius: 0.27288rem;
+        border: 0.582px solid #D8D8D8;
+        background: #F0F0F0;
+    }
+
+    .form-check-input {
+        border-color: #4B4B4B !important;
+    }
+
+    #aceito-termos {
+        transform: scale(1.3);
+        margin-right: 0.5rem;
+        margin-top: 0.35rem;
+        top: 0.2rem;
+    }
+
+    #label-termos {
+        color: #595959;
+        font-size: 1.28869rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .termos {
+        margin-top: 1rem;
+    }
+
+    #send-button {
+        margin-top: 1rem;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        flex-shrink: 0;
+        color: #848484;
+        font-size: 1.21769rem;
+        font-style: normal;
+        text-align: center;
+        font-weight: 500;
+        line-height: normal;
+        bottom: 2rem;
+    }
+
+    i.bx {
+        font-size: 2.5rem !important;
+    }
+
+    #send-button {
+        margin-top: 2rem;
+        transform: scale(1.3) !important;
+    }
+
+
 }
